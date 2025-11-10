@@ -76,3 +76,63 @@ nav ul li a:hover::after {
     width: 100%;
 
 }
+
+.hero {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;  
+    
+    }
+
+    .hero h1 {
+        max-width: 1200px;
+        text-align: justify;
+        line-height: 1.6;
+        margin: 20px auto;
+
+
+    }
+
+.pictures{
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    gap: 15px;
+    margin: 20px 0;  
+    flex-wrap: wrap;
+}
+
+.pictures img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;   
+}
+
+.pictures img:hover {
+    border: 3px solid #007bff;
+    transform: scale(1.03);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 1200px;   
+    margin: 20px auto;   
+    text-align: justify; 
+    line-height: 1.6;
+}
+
+.hero button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 1200px;
+    margin: 20px auto;
+   
+    
+}
+
+.hero button:hover {
+    border: 2px solid #007bff;
+}
