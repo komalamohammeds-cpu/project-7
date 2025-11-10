@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    background-color:gray;
+    color: black;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+.sup {
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.sup::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background: blue;
+    transition: width 0.3s ease;
+}
+
+.sup:hover::after{
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: green;
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: transparent 2px solid;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background: blue;
+    transition: width 0.3s ease;
+   }
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.hero {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;  
+    
+    }
+
+    .hero h1 {
+        max-width: 1200px;
+        text-align: justify;
+        line-height: 1.6;
+        margin: 20px auto;
+
+
+    }
+
+.pictures{
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    gap: 15px;
+    margin: 20px 0;  
+    flex-wrap: wrap;
+}
+
+.pictures img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;   
+}
+
+.pictures img:hover {
+    border: 3px solid #007bff;
+    transform: scale(1.03);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 1200px;   
+    margin: 20px auto;   
+    text-align: justify; 
+    line-height: 1.6;
+}
+
+.hero button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 1200px;
+    margin: 20px auto;
+   
+    
+}
+
+.hero button:hover {
+    border: 2px solid #007bff;
+}
