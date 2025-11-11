@@ -12,20 +12,25 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-
     background-color:gray;
     color: black;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 20px;
+    width: 1280px;
+    height: 104px;
 }
 
 .sup {
     color: black;
     font-size: 1.5rem;
     position: relative;
-    display: inline-block;
     padding-bottom: 5px;
+    width: 181px;
+    height: 36px;
+    top: 32px;
+    left: 70px;
+    
 }
 
 .sup::after {
@@ -43,25 +48,28 @@ header {
     width: 100%;
 }
 
-nav ul {
+ nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-    margin: 10px;
+    justify-content: center;   
+    align-items: center;        
+    gap: 40px;                  
+    margin: 0;                  
+    padding: 0;                
+    position: relative;         
+    top: 30px;                  
 }
 
-nav ul li a {
+.navbar ul li a {
     text-decoration: none;
-    position: relative;
     color: green;
-    display: inline-block;
     font-weight: bold;
-    border-bottom: transparent 2px solid;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-nav ul li a::after {
+.navbar ul li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -72,7 +80,7 @@ nav ul li a::after {
     transition: width 0.3s ease;
    }
 
-nav ul li a:hover::after {
+.navbar ul li a:hover::after {
     width: 100%;
 
 }
